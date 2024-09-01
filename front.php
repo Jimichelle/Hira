@@ -29,17 +29,43 @@
             <section>
                 <div class="container my-5 mx-auto">
                     <h2 class="text-left">Recommandations</h2>
-                    <div class="row">
-                        <div class="col-3">
-                            p
+                    <div class="d-flex flex-row my-4">
+                        <div class="card" style="width: 18rem; padding: 0rem;">
+                            <img src="/public/placeholder.svg" alt="placeholder" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Titre</h5>
+                                <p class="card-text">Description</p>
+                            </div>
                         </div>
-
                     </div>
-                        
-
             </section>
             <!-- Écouter récemment -->
+             <section>
+                <div class="container my-5 mx-auto">
+                    <h2 class="text-left">Écouter récemment</h2>
+                    <div class="d-flex flex-row my-4">
+                        <div class="card" style="width: 18rem; padding: 0rem;">
+                            <img src="/public/placeholder.svg" alt="placeholder" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
+             </section>
             <!-- Classement -->
+            <section>
+                <div class="container my-5 mx-auto">
+                    <h2 class="text-left">Classement</h2>
+                    <div class="container-fluid d-flex flex-row my-4">
+                        <div class="card mx-2" style="width: 18rem; padding: 0rem;">
+                            <img src="/public/placeholder.svg" alt="placeholder" class="card-img-top">
+                        </div>
+                        <div class="card mx-2" style="width: 18rem; padding: 0rem;">
+                            <img src="/public/placeholder.svg" alt="placeholder" class="card-img-top">
+                        </div>
+                        <div class="card mx-2" style="width: 18rem; padding: 0rem;">
+                            <img src="/public/placeholder.svg" alt="placeholder" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
 
         </main>
 
