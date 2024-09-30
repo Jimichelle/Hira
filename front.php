@@ -19,7 +19,10 @@
     </head>
 
     <body>
+    <?php require_once ('php/components/sidebar.php')?>
+
         <?php require_once ('php/components/header.php')?>
+        <?php require_once ('php/components/controler.php')?>
         <main>
             <!-- Titre -->
             <section class="container my-5 mx-auto">

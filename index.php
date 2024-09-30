@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php require_once ('php/components/header.php')?>
+<?php require_once ('php/database.php')?>
     <main class="d-flex justify-content-center flex-column">
         <section class="container my-5 mx-auto">
             <h1 class="text-center">Bienvenue sur Hira</h1>
