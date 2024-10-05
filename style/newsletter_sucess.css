@@ -1,0 +1,32 @@
+.au_milieu {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+.newsletter-container {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.newsletter-container img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.newsletter-container h2 {
+    font-weight: bold;
+}
+.no-thanks {
+    margin-top: 15px;
+    display: block;
+    color: gray;
+    text-decoration: none;
+}
+.no-thanks:hover {
+    color: #ab2d2d ;
+    text-decoration: underline;
+}
