@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand bg-body-tertiary shadow-sm py-3">
   <div class="container-fluid">
     <!-- Logo à gauche -->
-    <a class="navbar-brand d-flex align-items-center" href="#">
+    <a class="navbar-brand d-flex align-items-center" href="/index.php">
         <img src="public/logo.svg" alt="Logo" height="40" class="d-inline-block align-text-top me-2">
     </a>
 
@@ -19,15 +19,13 @@
 
     <!-- Avatar à droite -->
     <div class="d-flex align-items-center">
-      <div class="dropdown">
-        <img src="public/avatar-placeholder.png" alt="Avatar" class="rounded-circle" height="40" width="40" data-bs-toggle="dropdown">
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Mon profil</a></li>
-          <li><a class="dropdown-item" href="#">Paramètres</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Déconnexion</a></li>
-        </ul>
-      </div>
+      <?php 
+        if (isset($_SESSION['user'])) {
+          include 'php/header_login.php';
+        } else {
+          include 'php/header_signIn.php';
+        }
+      ?>
     </div>
   </div>
 </nav>

@@ -2,7 +2,7 @@
 
 /* Ici, nous définissons les informations de connexion */
 $host = "localhost";
-$dbname = "newsletter";
+$dbname = "hira_bdd";
 $username = "root";
 $password = "root";
 

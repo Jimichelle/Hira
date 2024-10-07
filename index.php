@@ -7,11 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <?php include 'php/header.php'; ?>
-    <?php include 'php/sidebar_right.php'; ?>
+    <?php include 'php/header.php';
+    include 'php/sidebar_right.php';
+    include 'utils/database.php';
+
+    session_start();
+    ?>
     <main class="d-flex flex-column mx-4">
         <section class=" my-5">
-            <h1 class="text-left h2">Bienvenue sur [user]</h1>
+            <?php 
+                if (isset($_SESSION['user'])) {
+                    echo "<h1 class='text-left h2'>Bienvenue sur ".$_SESSION['user']['nom']."</h1>";
+                } else {
+                    echo "<h1 class='text-left h2'>Bienvenue sur Hira</h1>";
+                }
+            ?>
         </section>
         <?php include 'php/footer.php'; ?>
     </main>
