@@ -3,7 +3,6 @@
     <!-- Logo à gauche -->
     <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="public/logo.svg" alt="Logo" height="40" class="d-inline-block align-text-top me-2">
-        <span class="fw-bold text-primary">HIRA</span> 
     </a>
 
     <!-- Barre de recherche au centre -->
