@@ -1,0 +1,44 @@
+main {
+    height: 100vh; /* Full height of viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../public/disques.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+body {
+    background-color: #fff;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #0ea5e9;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0ea5e9;
+}
+
+.text-muted a {
+    text-decoration: none;
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    padding-left: 20px; 
+}
+
+
+

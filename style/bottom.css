@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-bottom: 80px; /* Prevent overlap with the bottom bar */
+}
+
+.bottom-sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0c0a09;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1030; /* Above other content */
+}
+
+.song-details {
+    display: flex;
+    align-items: center;
+}
+
+.song-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.song-info p {
+    margin: 0;
+}
+
+.progress {
+    width: 50%;
+    height: 5px;
+    background-color: #333;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.progress-bar {
+    background-color: #0ea5e9;
+}
+
+.controls i {
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls i:hover {
+    color: #0ea5e9;
+}
+
+/* CSS pour agrandir l'image et le texte dans la sidebar quand elle s'ouvre */
+.offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.song-details-side-bottom img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: all 0.3s ease; /* Animation d'agrandissement */
+}
+
+.song-info p {
+    font-size: 1.2rem; /* Taille normale dans la sidebar fermée */
+    transition: all 0.3s ease;
+}
+
+.offcanvas.show .song-details-side-bottom img {
+    width: 200px; /* Taille agrandie de l'image */
+    height: 200px;
+}
+
+.offcanvas.show .song-info p {
+    font-size: 2rem;
+    
+     text-align: center;
+    
+}

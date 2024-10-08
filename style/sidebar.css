@@ -1,0 +1,40 @@
+   /* Custom styling for the sidebar trigger */
+   .sidebar-trigger {
+    position: fixed;
+    
+    
+    width: 100px;
+    background-color: #000;
+    height: 100%; 
+    text-align: center;
+    padding: 10px;
+   
+}
+.sidebar-trigger img {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar-trigger i {
+    font-size: 24px;
+    color: white;
+}
+
+.sidebar-trigger i:hover {
+    color: #0ea5e9;
+}
+
+.image-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.image-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.image-item h6 {
+    margin: 0;
+}
