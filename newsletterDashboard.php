@@ -53,7 +53,7 @@ try {
                         <td><?php echo htmlspecialchars($newsletter['nom']); ?></td>
                         <td><?php echo htmlspecialchars($newsletter['email']); ?></td>
                         <td>
-                            <form action="send_newsletter.php" method="post" style="display: inline;">
+                            <form action="sendNewsletter.php" method="post" style="display: inline;">
                                 <input type="hidden" name="email" value="<?php echo htmlspecialchars($newsletter['email']); ?>">
                                 <button type="submit" class="btn btn-primary">Envoyer</button>
                             </form>
