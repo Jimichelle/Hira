@@ -1,8 +1,8 @@
 <?php
 
 /* Ici, nous définissons les informations de connexion */
-$host = "localhost";
-$dbname = "newsletter";
+$host = "172.23.0.3";
+$dbname = "hira_bdd";
 $username = "root";
 $password = "root";
 

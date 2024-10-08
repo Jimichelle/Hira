@@ -21,8 +21,12 @@
             
             <form action="resultRegister.php" method="post">
                 <div class="mb-3">
-                    <label for="text" class="form-label">Nom d'utilisateur</label>
-                    <input type="email" class="form-control" id="username" name="username" placeholder="Nom d'utilisateur" required>
+                    <label for="text" class="form-label">Pseudo</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Nom d'utilisateur" required>
+                </div>
+                <div class="mb-3">
+                    <label for="text" class="form-label">Mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Adresse Email" required>
                 </div>
                 <div class="mb-3 position-relative">
                     <label for="password" class="form-label">Mot de passe</label>

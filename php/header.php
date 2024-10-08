@@ -20,7 +20,7 @@
     <!-- Avatar à droite -->
     <div class="d-flex align-items-center">
       <?php 
-        if (isset($_SESSION['user'])) {
+        if (isset($_SESSION['username'])) {
           include 'php/header_login.php';
         } else {
           include 'php/header_signIn.php';

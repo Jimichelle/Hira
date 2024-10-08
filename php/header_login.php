@@ -4,6 +4,6 @@
           <li><a class="dropdown-item" href="#">Mon profil</a></li>
           <li><a class="dropdown-item" href="#">Paramètres</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+          <li><a class="dropdown-item" href="disconnect.php">Déconnexion</a></li>
         </ul>
 </div>
