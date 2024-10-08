@@ -1,7 +1,7 @@
 <?php
 // Connexion à la base de données
-$host = 'localhost';
-$dbname = 'hira_bdd2';
+$host = '172.23.0.3';
+$dbname = 'hira_bdd';
 $username = 'root';
 $password = 'root';
 
