@@ -2,8 +2,8 @@
 session_start(); // Démarrage de la session
 
 // Connexion à la base de données
-$host = '172.23.0.3';
-$dbname = 'hira_bdd';
+$host = 'localhost';
+$dbname = 'hira_bdd2';
 $username = 'root';
 $password = 'root';
 
@@ -31,7 +31,6 @@ try {
                 
                 echo "Connexion réussie ! Bienvenue, " . $_SESSION['username'] . ".";
                 // Redirection vers la page d'accueil ou tableau de bord
-                sleep(2);
                 header("Location: index.php");
                 exit();
             } else {
