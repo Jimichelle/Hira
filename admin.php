@@ -1,10 +1,9 @@
 <?php
-session_start(); // Démarre la session
+session_start();
 
 include 'php/header.php';
 include 'utils/database.php';
 
-// Connexion à la base de données
 $host = '172.23.0.3';
 $dbname = 'hira_bdd';
 $username = 'root';
@@ -21,6 +20,11 @@ try {
     // Récupérer la liste des utilisateurs
     $stmt = $pdo->query("SELECT Id_Users, username, mail FROM users ORDER BY Id_Users DESC");
     $utilisateurs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Récupérer les abonnés à la newsletter
+    $stmt = $pdo->query("SELECT id, nom, email FROM newsletter ORDER BY id DESC");
+    $newsletters = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 } catch (PDOException $e) {
     die("Erreur : " . $e->getMessage());
 }
@@ -65,6 +69,27 @@ try {
                         <td><?php echo htmlspecialchars($utilisateur['Id_Users']); ?></td>
                         <td><?php echo htmlspecialchars($utilisateur['username']); ?></td>
                         <td><?php echo htmlspecialchars($utilisateur['mail']); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+
+        <!-- Liste des Abonnés à la Newsletter -->
+        <h2>Liste des Abonnés à la Newsletter</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($newsletters as $newsletter): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($newsletter['id']); ?></td>
+                        <td><?php echo htmlspecialchars($newsletter['nom']); ?></td>
+                        <td><?php echo htmlspecialchars($newsletter['email']); ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
