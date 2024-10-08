@@ -21,7 +21,7 @@
             
             <form action="resultRegister.php" method="post">
                 <div class="mb-3">
-                    <label for="text" class="form-label">Pseudo</label>
+                    <label for="text" class="form-label">Nom</label>
                     <input type="text" class="form-control" id="username" name="username" placeholder="Nom d'utilisateur" required>
                 </div>
                 <div class="mb-3">
