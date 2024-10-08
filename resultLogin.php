@@ -31,19 +31,16 @@ try {
                 
                 echo "Connexion réussie ! Bienvenue, " . $_SESSION['username'] . ".";
                 // Redirection vers la page d'accueil ou tableau de bord
+                sleep(2);
                 header("Location: index.php");
                 exit();
             } else {
                 // Mot de passe incorrect
                 echo "Mot de passe incorrect. Veuillez réessayer.";
-                sleep(3); // Attendre 3 secondes
-                header("Location: login.php");
             }
         } else {
             // Utilisateur non trouvé
             echo "Aucun compte trouvé avec cet email.";
-            sleep(3); // Attendre 3 secondes
-            header("Location: login.php");
         }
     }
 } catch (PDOException $e) {

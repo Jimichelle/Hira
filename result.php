@@ -24,7 +24,7 @@
                 echo "L'email renseigné est invalide.";
                 return;
             }
-            $request = $pdo->prepare('INSERT INTO utilisateur (nom, email) VALUES (:nom, :email)');
+            $request = $pdo->prepare('INSERT INTO newsletter (nom, email) VALUES (:nom, :email)');
             $request->bindParam(':nom', $nom);
             $request->bindParam(':email', $email);
             $request->execute();
